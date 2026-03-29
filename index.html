@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worten</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="teste">
+        <img src="teste.svg" class="logo" alt="icone de worten">
+        <div class="input-icon input-container">
+            <input type="text" id="meuInput" placeholder="O que estás à procura">
+            <span class="clear" onclick="limpar()">X</span>
+            <i class="fa-solid fa-magnifying-glass icon"></i>	
+        </div>
+        <div class="desviar">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    <nav class="sidebar">
+        <ul>
+            <li onclick="abrirModal()"><a href="#"><i class="fa-solid fa-bars"></i>Menu</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a class="caixaazul" href="#">Worten Resolve</a></li>
+            <li><a href="#">Cupões para ti</a></li>
+            <li><a class="caixavermelha" href="#">Worten Life</a></li>
+            <li><a href="#">Dicas e Novidades</a></li>
+            <li><a href="#">App Worten</a></li>
+            <li><a href="#">Worten Business</a></li>
+        </ul>  
+    </nav>
+    
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <div class="cabecalho">
+                <h1 class="texto">Worten</h1>
+                <button class="fechar" id="fechar">X</button>
+            </div>
+            <div class="butoes">
+                <button class="produtos vermelho" onclick="mostrarProdutos(this)" id="buttonProdutos">Produtos</button>
+                <button class="produtos azul" id="buttonServicos" onclick="mostrarServicos(this)">Serviços</button>
+            </div>
+            <div class="listaprodutos" id="listaprodutos">
+                <ul>
+                    <li>
+                        <div class="subtitulo2">
+                            <p>WORTEN LIFE<br>Vantagens grátis, sem complicações</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div onclick="mostrarMenu()" class="separar">
+                            <p>Recondicionados e Outlet</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <div class="outrajanela" id="outrajanela">
+                            <p>Recondicionados e Outlet</p>
+                            <hr>
+                            <ul>
+                                <li><p>Outlet</p>
+                                    <ul>
+                                        <li><img src="outlet.png" alt="imagem do outlet">
+                                            <p>Outlet</p>
+                                        </li>
+                                        <li><img src="frio.png" alt="imagem do frio">
+                                            <p>Grandes Eletrodomésticos</p>
+                                        </li>
+                                        <li>
+                                            <img src="info.png" alt="imagem de computador">
+                                            <p>Informática e Acessórios Outlet</p>
+                                        </li>
+                                        <li>
+                                            <img src="fones.png" alt="imagem de fones">
+                                            <p>TV, Video e Som Outlet</p>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>Recondicionados e Retomas</p>
+                                    <ul>
+                                        <li>
+                                            <img src="flippers.webp" alt="recondicionados">
+                                            <p>Recondicionados Certificados</p>
+                                        </li>
+                                        <li><img src="retoma.png" alt="">
+                                            <p>Vende o teu Equipamento</p>
+                                        </li>
+                                        <li>
+                                            <img src="iphone.webp" alt="">
+                                            <p>Telemóveis Recondicionados</p>
+                                        </li>
+                                        <li>
+                                            <img src="smartchesrecondicionado.webp" alt="">
+                                            <p>Smartwatches Recon dicionados</p>
+
+                                            </li>
+                                        <li>
+                                            <img src="computadores.png" alt="">
+                                            <p>Computadores Recondicionados</p>
+
+                                            </li>
+                                        <li>
+                                            <img src="tabletrecondicionados.png" alt="">
+                                            <p>Tablets Recondicionados</p>
+                                        </li>
+                                        <li><img src="consola.webp" alt="">
+                                            <p>Consola Recondicionados</p>
+                                        </li>
+                                        <li>
+                                            <img src="vertodos.webp" alt="">
+                                            <p>Ver todos</p>
+                                        </li>
+
+                                    </ul>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p>Usados</p>
+                                    <ul>
+                                        <li>
+                                            <img src="usados.webp" alt="">
+                                            <p>Jogos e Consolas Usados</p>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Eletrodomésticos</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Telemóveis e Smartwatches</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Informática</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>TV e Som</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Gaming</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Jogos e Brinquedos</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Fotografia, Drones e Vídeo</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Cuidado Pessoal e Saúde</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Perfumaria e Cosmética</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Bebé</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Casa e Decoração</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Jardim</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Bricolage</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Desporto, Outdoor e Viagem</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Mobilidade, Auto e Moto</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Escritório e Papelaria</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Livros, Bilheteira e Experiencias</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Animais de Estimação</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div class="separar">
+                            <p>Recomendações para ti</p>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            <div class="listaservicos" id="listaservicos">
+                <div class="texto2"><p>VER TODOS OS SERVIÇOS</p></div>
+                <div><p>SERVIÇOS POR TIPOLOGIA</p></div>
+                <hr>
+                <div class="separar">
+                        <p>Serviços para Casa</p>
+                        <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>Reparações e Manutenções</p>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>Instalações e Configurações</p>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>Pacotes TV+Net+Voz</p>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>Subscrições e Planos</p>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>Bilheteira</p>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>Fotografia e Impressão</p>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>Seguros</p>
+                    <i class="fa-solid fa-greater-than"></i>
+                </div>
+                <hr>
+                <div class="separar">
+                    <p>FINANCIAMENTO</p>                
+                </div>
+                <hr>
+                <div class="separar">                                   <p>ASSISTÊNCIA REMOTA</p>
+                </div>
+                <hr>
+                <div>
+                    <p>AGENDA UM SERVIÇO NA HORA</p>
+                </div>
+                <hr>
+                <div>
+                    <p>SERVIÇOS POR EQUIPAMENTO</p>
+                </div>
+                <hr>
+            </div>  
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body> 
+</html>

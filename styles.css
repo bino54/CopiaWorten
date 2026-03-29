@@ -1,0 +1,408 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+.teste{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 75px;
+    height: 25px;
+}
+
+.desviar{
+    display: flex;
+    gap: 24px;  
+}
+
+.desviar i{
+    font-size: 25px;
+}
+
+
+
+.input-container{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 2px solid gray;
+    outline: none;
+}
+
+.clear {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none; /* começa escondido */
+  color: black;
+  font-weight: bold;
+}
+
+
+
+
+.input-container input {
+  width: 100%;
+  height: 35px;
+}
+
+.input-container .icon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 19px;
+}
+
+.input-icon input{
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a{
+    display: block;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000004b;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+
+.modal{
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+}
+
+
+
+.fechar{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.texto{
+    color: white;
+}
+
+
+.butoes{
+    display: flex;
+    flex-direction: row;
+}
+/* 
+.produtos{
+    width: 200px;
+    height: 50px;
+
+} */
+
+.produtos {
+  background: white;
+  border: 1px solid;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 15px;
+  width: 200px;
+  height: 50px;
+}
+
+/* Linha escondida */
+.produtos::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: rgba(100, 6, 6, 0.425);
+  transition: width 0.3s ease;
+}
+
+/* Quando passa o rato */
+.produtos:hover::after {
+  width: 100%;
+}
+
+
+.listaprodutos{
+    overflow-y: auto;
+    overflow-y: scroll;
+
+}
+
+
+.listaservicos{
+    overflow-y: auto;
+    overflow-y: scroll;
+
+}
+
+
+
+.listaprodutos ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    background-color: rgb(240, 229, 229);
+}
+
+.listaservicos ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    background-color: rgb(240, 229, 229);
+}
+
+div.separar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
+.outrajanela {
+    width: 700px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    background-color: rgb(240, 229, 229);
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+/* 
+.modal{
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+} */
+
+.outrajanela{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.outrajanela li ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+
+.outrajanela.mostrar{
+    display: flex;
+}
+
+.outrajanela li p{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.outrajanela li ul{
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.outrajanela li ul img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.outrajanela>p{
+    font-size: 22px;
+}
+
+.outrajanela li p{
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.outrajanela{
+    overflow-y: auto;
+    overflow-y: scroll;
+
+}
+
+.listaservicos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: rgb(240, 229, 229);
+}
+
+
+.listaservicos{
+    display: none;
+}
+
+
+
+.listaservicos.semmostrar{
+    display: none;
+}
+
+
+.listaprodutos.semmostrar{
+    display: none;
+}
+
+.listaservicos.mostrar{
+    display: flex;
+}
+
+
+.listaprodutos.mostrar{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    background-color: rgb(240, 229, 229);
+}
+
+.azul:hover{
+    background-color: darkblue;
+}
+
+
+.vermelho:hover{
+    background-color: red;
+}
+
+.vermelho.ativo{
+    background-color: red;
+}
+
+.azul.ativo{
+    background-color: blue;
+}
+
+
+.texto2{
+    background-color: rgba(73, 71, 71, 0.294);
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.subtitulo2{
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+
+
+
+.sidebar ul li a.caixaazul{
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+    background-color: white;
+}
+
+
+.sidebar ul li a.caixavermelha{
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+    background-color: white;
+}
+
+
+
+
+
+

@@ -11,12 +11,14 @@ body {
 
 .teste{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap:20px
 }
 
 .logo{
     width: 75px;
     height: 25px;
+    transform: translateY(50%);
 }
 
 .desviar{
@@ -26,17 +28,26 @@ body {
 
 .desviar i{
     font-size: 25px;
+    color: white;
+    transform: translateY(25%);
 }
 
+.linha{
+    display: flex;
+    color:white;
+}
+
+.linha p{
+    transform: translateY(25%);
+}
 
 
 .input-container{
     position: relative;
-    width: 100%;
+    width: 70%;
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    border: 2px solid gray;
     outline: none;
 }
 
@@ -402,7 +413,184 @@ div.separar {
 }
 
 
+.container {
+  display: flex;
+  gap: 5px;
+}
+
+.container2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 400px;
+    gap: 2px;
+}
+
+.img2{
+    grid-row: 1;
+}
+
+.img3{
+    grid-row: 2;
+}
+
+.img2 img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.img3 img{
+  width: 100%;
+  height: 100%;
+}
 
 
+.img1 {
+  width: 50%;     
+  height: 435px; 
+}
+
+.img1 .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
 
 
+/*
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  gap: 10px;
+}
+
+/* esquerda 
+.img1 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+/* direita topo 
+.img2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* direita baixo 
+.img3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* MUITO IMPORTANTE 
+.img1,
+.img2,
+.img3 {
+  height: 100%;
+}
+
+/* swiper ocupar tudo 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+
+/* imagens 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+  */
+
+.img1 {
+  position: relative; /* necessário para posicionamento interno */
+}
+
+/* setas */
+.img1 .swiper-button-prev,
+.img1 .swiper-button-next {
+  top: auto !important;
+  bottom: 50px !important;
+  transform: none !important;
+}
+
+/* posicionamento horizontal */
+.img1 .swiper-button-prev {
+  left: 20px !important;
+  right: auto !important;
+}
+
+.img1 .swiper-button-next {
+  right: 10px !important;
+  left: auto !important;
+}
+
+
+.texto1{
+  position: absolute;
+  top: 15%;
+  left: 73%;
+  color: white;
+}
+
+.texto1 h1{
+  font-size: 25px;
+}
+
+
+.texto2{
+  position: absolute;
+  top: 37%;
+  left: 73%;
+  color: black;
+  background: none;
+}
+
+.texto2 h1{
+  font-size: 25px;
+}
+
+.texto3{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  color: white;
+}
+
+section{
+  background-color: white;
+}
+
+.figura{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.objeto{
+  display: flex;
+}
+
+.objeto i{
+  font-size: 25px;
+  color:rgb(22, 231, 68);
+}

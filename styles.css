@@ -621,3 +621,27 @@ section{
   font-size: 20px;
   color: black;
 }
+
+.imagem{
+  background-color: #f6f6f6;
+  
+}
+
+.icones{
+  margin: 0 200px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
+
+.class1 img{
+  width: 100px;
+  height: 100px;
+}
+.class1{
+  margin: 20px;
+}
+
+.teste3{
+  background-color: white;
+}

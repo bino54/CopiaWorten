@@ -594,3 +594,30 @@ section{
   font-size: 25px;
   color:rgb(22, 231, 68);
 }
+
+.img2 i{
+  background-color: transparent;
+  position: relative;
+  
+}
+
+.img2 i{
+  position: absolute;
+  top: 140px;
+  right: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.img3 i{
+  background-color: transparent;
+  position: relative;
+}
+
+.img3 i{
+  position: absolute;
+  top: 140px;
+  right: 5px;
+  font-size: 20px;
+  color: black;
+}

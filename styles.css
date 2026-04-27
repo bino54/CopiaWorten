@@ -681,3 +681,107 @@ section{
 .botao a:hover {
   background-color: #0056b3;
 }
+
+.mudardecor2{
+  background-color: #ededed;
+}
+
+.produtosxl{
+  margin-left: 200px;
+  display: flex;
+  gap: 30px;
+}
+
+.produtoparaxl{
+  width: 192px;
+  height: 402px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.produtoparaxl img{
+  width: 144px;
+  height: 144px;
+  padding: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.produtoparaxl a.textoparaxl{
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  color: black;
+}
+
+.produtostopyou{
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.textoemvermelho{
+  color: red;
+}
+
+.produtostopyou{
+  border-radius: 15px;
+}
+
+.produtostopyou img{
+  width: 176px;
+  height: 132px;
+}
+
+.produtostopyou i.fa-star{
+  color: rgb(255, 223, 41);
+}
+
+.botaovermelho{
+  padding: 15px 35px;
+  color: white;
+  background-color: red;
+  border-radius: 25px;
+  border: none;
+}
+
+.juntarbotoes{
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  top: 350px;
+}
+
+.fa-heart{
+  position: absolute;
+  left: 150px;
+  bottom: 10px;
+}
+
+
+.juntarestrela{
+  display: flex;
+  flex-direction: row;
+}
+
+.letra{
+  font-size: 15px;
+  vertical-align: super;
+}
+
+.produtostopyou .classec{
+  width: 37px;
+  height: 22px;
+}
+
+
+
+.img{
+  float: left;
+}
+
+.textoviu{
+  font-size: 20px;
+}

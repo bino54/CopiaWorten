@@ -693,7 +693,7 @@ section{
 }
 
 .produtoparaxl{
-  width: 192px;
+  width: 200px;
   height: 402px;
   background-color: white;
   position: relative;
@@ -711,8 +711,9 @@ section{
 
 .produtoparaxl a.textoparaxl{
   position: absolute;
-  bottom: 0px;
-  left: 50px;
+  width: 200px;
+  top: 90%;
+  left: 10%;
   color: black;
 }
 
@@ -778,10 +779,64 @@ section{
 
 
 
-.img{
+.produtostopyou .img10{
   float: left;
 }
 
 .textoviu{
+  width: 200px;
   font-size: 20px;
+  word-wrap: break-word;
+
+}
+
+
+
+
+.mudardecor2{
+  position: relative;
+}
+
+.esquerda, .direita{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  color: black;
+  border-radius: 50%;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.esquerda{
+  left: 270px;
+}
+
+.direita{
+  right: 290px;
+}
+
+.carousel{
+  position: relative;
+  width: 1300px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+
+.direita .fa-greater-than{
+  font-size: 25px;
+}
+
+
+.esquerda .fa-less-than{
+  font-size: 25px;
 }

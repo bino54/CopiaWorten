@@ -1,0 +1,137 @@
+
+.imagemclassea{
+    width: 50px;
+}
+
+
+
+.puxarlado2{
+    margin-left: 150px;
+}
+
+
+
+.galeria{
+    margin-left: 120px;
+    display: flex;
+    gap: 12px;
+}
+
+
+.imagemprincipal{
+    width: 660px;
+    height: 528px;
+}
+
+
+.puxardireita img{
+    width: 30px;
+    height: 30px;
+}
+
+.puxardireita{
+    display: flex;
+    background-color: #fff1ea;
+    padding: 8px 16px;
+    font-size: 14px;
+    transform: translateX(500px);
+    width: fit-content;
+}
+
+
+.estudio{
+    width: 62px;
+    height: 62px;
+    border: 1px solid gray;
+}
+
+
+.amarelo{
+    color: yellow;
+}
+
+ 
+.produtofinal{
+    background-color: #ffffff;
+}
+
+
+.imagemrodado{
+    transform: scaleX(-1);
+}
+
+.imagemparajuntar{
+    display: flex;
+
+}
+
+.imagemparajuntar i:last-child{
+    margin-left: -20px;
+}
+
+.cinzento{
+    color: gray;
+}
+
+.conteudostar{
+    display: flex;
+}
+
+
+
+.imagemacima{
+    position: relative;
+}
+
+.telaimagem1{
+    border: none;
+    font-size: 26px;
+    position: absolute;
+    top: 200px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+.telaimagem2{
+    border: none;
+    font-size: 26px;
+    position: absolute;
+    top: 200px;
+    right: 1000px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+.telaimagem1:hover, .telaimagem2:hover{
+   background-color: #9b9b9b;
+}
+
+.regularicones{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+    gap: 25px;
+}
+
+.acima1{
+    position: absolute;
+    top: -150px;
+    left: 0px;
+}
+
+.acima2{
+    position: absolute;
+    top: -100px;
+}
+
+
+.acima3{
+    position: absolute;
+    top: -50px;
+}

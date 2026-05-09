@@ -5,10 +5,6 @@
 
 
 
-.puxarlado2{
-    margin-left: 150px;
-}
-
 
 
 .galeria{
@@ -19,7 +15,7 @@
 
 
 .imagemprincipal{
-    width: 660px;
+    width: 600px;
     height: 528px;
 }
 
@@ -33,8 +29,8 @@
     display: flex;
     background-color: #fff1ea;
     padding: 8px 16px;
-    font-size: 14px;
-    transform: translateX(500px);
+    font-size: 10px;
+    transform: translateX(325px);
     width: fit-content;
 }
 
@@ -99,7 +95,7 @@
     font-size: 26px;
     position: absolute;
     top: 200px;
-    right: 1000px;
+    right: 100px;
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -122,16 +118,268 @@
 .acima1{
     position: absolute;
     top: -150px;
-    left: 0px;
+    left: 100px;
 }
 
 .acima2{
     position: absolute;
     top: -100px;
+    left: 100px;
 }
 
 
 .acima3{
     position: absolute;
     top: -50px;
+    left: 100px;
+}
+
+
+.puxarlado2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto2{
+    display: flex;
+    flex-direction: column;
+}
+.galeria2 img{
+    width: 48px;
+    height: 48px;
+    padding: 2px;
+    border: 1px solid black;
+
+}
+
+.textogrande{
+    font-weight: bold;
+}
+
+.lado{
+    display: flex;
+    gap: 12px;
+}
+
+.caixa{
+    padding: 6px;
+    border: 1px solid black;
+}
+
+.caixadupla{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.escolhida{
+    background-color: black;
+    color: white;
+}
+.organizarx{
+    display: flex;
+    gap: 30px;
+}
+
+
+.testexdupla2{
+    display: flex;
+}
+
+.caixadupla2{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.caixamarela{
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.botaovermelho{
+    width: 100%;
+}
+.ladoaladox{
+    display: flex;
+}
+
+.abaixo{
+    display: flex;
+    flex-direction: column;
+}
+
+.testex2x{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 15px;
+}
+
+.verde{
+    color: green;
+}
+
+.outrolado{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ladoxlado{
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+}
+
+.caixavermelha{
+    background-color: red;
+    padding: 8px;
+    color: white;
+}
+
+.caixapreta{
+    padding: 8px;
+    background-color: black;
+    color: white;
+}
+
+
+.caixaamarela{
+    background-color: rgb(255, 251, 0);
+    padding: 15px;
+}
+
+
+.caixaazul{
+    background-color: #ededed;
+}
+
+.lado3{
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lado4{
+    display: flex;
+    gap: 10px;
+}
+
+.lado2{
+    display: flex;
+}
+
+.testex3{
+    font-size: 14px;
+    margin: 12px;
+}
+
+.caixabranco{
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.lado5{
+    display: flex;
+}
+
+.lado5 i{
+    color: red;
+}
+
+.textovermelho{
+    color: red;
+}
+
+.botaovermelho2{
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 40px;
+}
+
+.espaco{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ladoalado{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 1399px){
+    .acima1{
+    top: -150px;
+    left: -350px;
+    }
+
+    .acima2{
+    top: -100px;
+    left: -350px;
+    }
+
+
+    .acima3{
+        top: -40px;
+        left: -350px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1400px) and (max-width: 1499px){
+    .acima1{
+    top: -150px;
+    left: -250px;
+    }
+
+    .acima2{
+    top: -100px;
+    left: -250px;
+    }
+
+
+    .acima3{
+        top: -50px;
+        left: -250px;
+    }
+}
+
+
+
+@media (min-width: 1500px){
+    .acima1{
+    position: absolute;
+    top: -150px;
+    left: -50px;
+}
+
+.acima2{
+    position: absolute;
+    top: -100px;
+    left: -50px;
+}
+
+
+.acima3{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+}
+
+
+.galeria2 .imagemfrente3{
+    border: 3px solid black;
 }

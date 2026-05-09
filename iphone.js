@@ -27,7 +27,7 @@ function updateCarousel2() {
     imagemtroca.src = imgSelecionada;
   }
   prevBtn.style.display = index === 0 ? "none" : "block";
-  nextBtn.style.display = index === 4 ? "none" : "block";
+  nextBtn.style.display = index === (imagens.length-1) ? "none" : "block";
 }
 
 

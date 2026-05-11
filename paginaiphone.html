@@ -72,7 +72,7 @@
                     <i class="fa-solid fa-share-from-square acima3"></i>
                 </div>
                 <div class="galeria">
-                        <img data-valor="0" class="estudio" src="imagensprodutos/iphonev1.jpeg" alt="iphone 1">
+                        <img data-valor="0" class="estudio selecionado" src="imagensprodutos/iphonev1.jpeg" alt="iphone 1">
                         <img data-valor="1" class="estudio"src="imagensprodutos/iphone2.jpeg" alt="iphone 2">
                         <img data-valor="2" class="estudio" src="imagensprodutos/iphone3.jpeg" alt="iphone 3">
                         <img data-valor="3" class="estudio" src="imagensprodutos/iphone4.jpeg" alt="iphone 4">
@@ -80,21 +80,238 @@
                 </div>
                 <br>
                 <br>
+                <a href="#" class="g2xlinha btn" id="openModal">
                 <hr>
                 <br>
-                <div class="ladoalado">
-                    <h1>Caracteristicas técnicas</h1>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <div class="ladoalado">
+                        <h1>Caracteristicas técnicas</h1>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </div>
+                <br>
+                <hr>
+                </a>
+                <div class="modal-overlay" id="modalOverlay">
+
+                    <!-- Modal -->
+                    <div class="modal">
+                        <button class="close" id="closeModal">  Fechar X</button>
+                        <h2>Características técnicas</h2>
+                        <table>
+                            <thead>
+                                <th>Referência</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Referência</td>
+                                    <td>8600340</td>
+                                </tr>
+                                <tr>
+                                    <td>EAN</td>
+                                    <td>0195950627169</td>
+                                </tr>
+                                <tr>
+                                    <td>Marca</td>
+                                    <td>APPLE</td>
+                                </tr>
+                                <tr>
+                                    <td>Modelo</td>
+                                    <td>IPhone 17 Pro</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Caracteristicas Específicas</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sistema Operativo</td>
+                                    <td>iOS</td>
+                                </tr>
+                                <tr>
+                                    <td>Versão Sistema Operativo</td>
+                                    <td>iOS 26</td>
+                                </tr>
+                                <tr>
+                                    <td>Processador</td>
+                                    <td>A19 Pro</td>
+                                </tr>
+                                <tr>
+                                    <td>Cartões</td>
+                                    <td>Dual SIM (nano-SIM e eSIM)</td>
+                                </tr>
+                                <tr>
+                                    <td>Operador</td>
+                                    <td>Desbloqueado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead>
+                                <th>Memória</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Memória Interna</td>
+                                    <td>256 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Memória Interna</td>
+                                    <td>256 GB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Bateria</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Entrada do Carregador</td>
+                                    <td>USB-C</td>
+                                </tr>
+                                <tr>
+                                    <td>Carregamento sem fios</td>
+                                    <td>Sim</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Ecrã</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dimensão do Ecrã(Polegadas)</td>
+                                    <td>6.3</td>
+                                </tr>
+                                <tr>
+                                    <td>Tecnologia do Ecrã</td>
+                                    <td>Super Retina XDR</td>
+                                </tr>
+                                <tr>
+                                    <td>Taxa de Atualização</td>
+                                    <td>120 Hz</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Câmara</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nº de câmaras traseiras</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Nº de câmaras frontais</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Resolução Câmara Traseira</td>
+                                    <td>48 + 48 + 48 MP</td>
+                                </tr>
+                                <tr>
+                                    <td>Resolução Câmara Frontal</td>
+                                    <td>18 MP</td>
+                                </tr>
+                                <tr>
+                                    <td>Gravação de Video</td>
+                                    <td>Sim</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Conexões</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tipo de Rede</td>
+                                    <td>5G</td>
+                                </tr>
+                                <tr>
+                                    <td>Bluetooth</td>
+                                    <td>Sim</td>
+                                </tr>
+                                <tr>
+                                    <td>Função GPS</td>
+                                    <td>Sim</td>
+                                </tr>
+                                <tr>
+                                    <td>NFC</td>
+                                    <td>Sim</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Sensores</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sensores</td>
+                                    <td>Face ID | Sensor LiDAR | Barómetro | Giroscópio de grande amplitude dinâmica |  Acelerómetro de alta força G | Sensor de proximidade | Sensor de luz ambiente duplo</td>
+                                </tr>
+                                <tr>
+                                    <td>Inteligência Artificial</td>
+                                    <td>Sim</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Data de Lançamento</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data de Lançamento</td>
+                                    <td>19 de   Setembro de 2025</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <thead>
+                                <th>Características Físicas</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cor</td>
+                                    <td>Prateado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+
+                <br>
+                <a href="#" class="g2xlinha">
+                    <div class="ladoalado">
+                        <h1>Ver stock em loja</h1>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </div>
                 <br>
                 <hr>
-                <br>
-                <div class="ladoalado">
-                    <h1>Ver stock em loja</h1>
-                    <i class="fa-solid fa-greater-than"></i>
-                </div>
-                <br>
-                <hr>
+                </a>
             </div>
             <div>
                 <div class="outrolado">

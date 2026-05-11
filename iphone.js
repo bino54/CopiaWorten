@@ -4,12 +4,6 @@ const imagemtroca = document.querySelector('.imagemacima img' )
 const nextBtn = document.querySelector('.direita1');
 const prevBtn = document.querySelector('.esquerda1');
 
-imagens.forEach(imagem => {
-    imagem.addEventListener('click',() =>{
-        const imgSelecionada = imagem.src;
-        imagemtroca.src = imgSelecionada;
-    })
-})
 
 
 
@@ -25,7 +19,16 @@ function updateCarousel2() {
   if (imagem) {
     imgSelecionada = imagem.src;
     imagemtroca.src = imgSelecionada;
+    imagens.forEach((i) => {
+          i.classList.remove('selecionado');
+        })
+    imagem.classList.add('selecionado');
   }
+  prevBtn.style.display = index === 0 ? "none" : "block";
+  nextBtn.style.display = index === (imagens.length-1) ? "none" : "block";
+}
+
+function tratar(){
   prevBtn.style.display = index === 0 ? "none" : "block";
   nextBtn.style.display = index === (imagens.length-1) ? "none" : "block";
 }
@@ -51,12 +54,46 @@ function mudarxImagem1(){
 
 
 
+imagens.forEach((imagem,indext) => {
+    imagem.addEventListener('click',() =>{
+        const imgSelecionada = imagem.src;
+        imagemtroca.src = imgSelecionada;
+        index= indext;
+        tratar();
+
+        imagens.forEach((i) => {
+          i.classList.remove('selecionado');
+        })
+
+        imagem.classList.add('selecionado');
+    })
+})
 
 
 
 
 
 
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+    const modalOverlay = document.getElementById('modalOverlay');
+
+    // Abrir modal
+    openBtn.addEventListener('click', () => {
+      modalOverlay.classList.add('active');
+    });
+
+    // Fechar modal
+    closeBtn.addEventListener('click', () => {
+      modalOverlay.classList.remove('active');
+    });
+
+    // Fechar clicando fora do modal
+    modalOverlay.addEventListener('click', (event) => {
+      if (event.target === modalOverlay) {
+        modalOverlay.classList.remove('active');
+      }
+    });
 
 
 

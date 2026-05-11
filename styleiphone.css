@@ -383,3 +383,67 @@
 .galeria2 .imagemfrente3{
     border: 3px solid black;
 }
+
+.galeria .estudio{
+    border: 1px solid gray;
+}
+
+.galeria .selecionado{
+    border: 1px solid black;
+}
+
+
+.g2xlinha{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Overlay */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Modal */
+    .modal {
+      background: white;
+      width: 100vh;
+      max-width: 95%;
+      padding: 24px;
+      border-radius: 12px;
+      position: relative;
+
+      animation: fadeIn 0.3s ease;
+    }
+
+    /* Botão fechar */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Classe ativa */
+    .active {
+      display: flex;
+    }
+
+table,td,th {
+    border-bottom: 1px dotted black;
+}
+
+
+table {
+    border-collapse: collapse;
+}

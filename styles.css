@@ -421,7 +421,6 @@ div.separar {
 .container2{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 400px;
     gap: 2px;
 }
 
@@ -447,7 +446,7 @@ div.separar {
 
 .img1 {
   width: 50%;     
-  height: 435px; 
+  height: 500px; 
 }
 
 .img1 .swiper {

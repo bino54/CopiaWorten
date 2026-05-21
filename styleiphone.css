@@ -408,6 +408,7 @@
       display: none;
       align-items: center;
       justify-content: center;
+      z-index: 99999;
     }
 
     /* Modal */
@@ -420,6 +421,7 @@
       position: relative;
         overflow-y: auto;
       animation: fadeIn 0.3s ease;
+      z-index: 9999;
     }
 
     /* Botão fechar */
@@ -452,13 +454,23 @@ table {
     display: flex;
     font-size: 25px;
     background-color: #f6f6f6;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
-.botaovermelho3{
+
+
+.botaovermelho4{
     background-color: red;
     color: white;
-    margin-left: 500px;
-    padding: 10px;
-    border-radius: 40px;
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    padding: 12px 24px;
 
 }
 
@@ -471,4 +483,46 @@ table {
     margin-left: 100px;
     padding: 10px;
 }
+
+.textoemvermelho{
+    margin: 40px;
+}
+
+
+
+
+.juntarbotoes2{
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+
+.juntarbotoes2{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
